@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<title>Dashboard-commentCard</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="/styleSheets/app.css">
+</head>
+<body>
+    <div class="ui fixed inverted menu">
+        <div class = "header item"><i class="code icon"></i>Dashboard</div>
+
+    </div>
+
+
+
+
+    <% dashboard.forEach(function(comment){ %>
+        <div>
+            <span> <%=comment.commentType %> </p>
+            <span> <%=comment.serviceType %> </p>
+            <span> <%=comment.body %> </p>
+            <span> <%= comment.created %> </p>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        </div>
+<% }) %>
+
+
+</body>
+</html>

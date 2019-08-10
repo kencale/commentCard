@@ -1,0 +1,27 @@
+
+<% include ./partials/header%>
+
+
+
+
+
+<div class= "ui main text container segment">
+     " "
+    <div class= "ui huge header">
+        Comment Card
+    </div>
+        <h2> Please input your comment to our service </h1>
+        <form class="ui form" action="/comment" method="POST">
+            <select class="ui dropdown"  id="commentType">
+                <option value="">Comment Type</option>
+                <option value="1">Comment or suggestion</option>
+                <option value="0">Complaint</option>
+            </select>
+            <input type ="text" name= "comment[serviceType]" placeholder="which service to comment">
+            <input type ="text" name= "comment[body]" placeholder="write your comment here">
+            <input type = "submit">
+        </form>
+</div>
+
+
+<% include ./partials/footer %>
